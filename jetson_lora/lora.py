@@ -4,7 +4,7 @@ import math
 from collections import namedtuple
 from random import random
 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 import spidev
 
 from .constants import *

@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='raspi-lora',
+    name='jetson-lora',
     version='0.3',
-    packages=['raspi_lora'],
-    url='https://github.com/the-plant/raspi-lora',
+    packages=['jetson_lora'],
+    url='https://github.com/TeaOfJay/jetson-lora',
     license='MIT',
     author='Anne Wood',
     author_email='anne.w@fastmail.us',
-    description='LoRa RFM9x library for Raspberry Pi inspired by RadioHead',
+    description='LoRa RFM9x library for Raspberry Pi inspired by RadioHead and raspi-lora',
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[
@@ -23,8 +23,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
     ],
-    keywords='lora rfm95 rfm9x rfm96 rfm97 rfm98 hardware raspberrypi',
+    keywords='lora rfm95 rfm9x rfm96 rfm97 rfm98 hardware raspberrypi jetson',
     install_requires=[
-        'RPi.GPIO',
+        'Jetson.GPIO',
         'spidev'],
 )
